@@ -1,0 +1,21 @@
+.job-level-main-div {
+    position: relative;
+    z-index: 2;
+}
+
+.table-absolute-div {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    background-color: aliceblue;
+    width: max-content;
+    padding: 0.1rem 0.2rem;
+    height: auto;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
+    z-index: 100;
+}

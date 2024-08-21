@@ -1,0 +1,71 @@
+.description-tags-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.description-box {
+}
+
+.description-box > p {
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.tags-box {
+  display: flex;
+  align-items: center;
+}
+.tags-box div {
+  display: flex;
+  align-items: center;
+}
+.tags-box > span {
+  color: rgb(102, 102, 102);
+  font-weight: 550;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.tags-box > div > span {
+  text-transform: capitalize;
+  color: #747474;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px), (max-height: 750px) {
+  .tags-box {
+    flex-direction: column; /* Stack tags vertically */
+    align-items: flex-start; /* Align tags to the start */
+  }
+}
+
+@media (max-width: 992px), (max-height: 600px) {
+  .tags-box {
+    flex-direction: column; /* Stack tags vertically */
+    align-items: flex-start; /* Align tags to the start */
+  }
+}
+
+@media (max-width: 768px), (max-height: 400px) {
+  .tags-box {
+    flex-direction: column; /* Stack tags vertically */
+    align-items: flex-start; /* Align tags to the start */
+  }
+}
+
+@media (max-width: 576px), (max-height: 200px) {
+  .tags-box {
+    flex-direction: column; /* Stack tags vertically */
+    align-items: flex-start; /* Align tags to the start */
+  }
+}
+
+@media (max-width: 360px) {
+  .tags-box {
+    flex-direction: column; /* Stack tags vertically */
+    align-items: flex-start; /* Align tags to the start */
+  }
+}

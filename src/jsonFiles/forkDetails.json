@@ -1,0 +1,10 @@
+{
+    "Generation": "1723186257675822",
+    "columns": [
+        {
+            "path": "gs://df_mum_b2/domain=banking/dataset=banking/fraud_dataset.parquet",
+            "version": "1723186257675822"
+        }
+    ],
+    "name": "fork1"
+}

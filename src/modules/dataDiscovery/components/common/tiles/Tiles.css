@@ -1,0 +1,65 @@
+.tiles-main {
+    /* height: 100%; */
+    width: 25%;
+    padding: 1% 2%;
+}
+
+.record-tile {
+    width: 20%;
+}
+
+.quality-metrics-tile {
+    /* height: 100%; */
+    width: 55%;
+    padding: 1% 2%;
+}
+
+.tile-container {
+    padding: 10px 5px;
+}
+
+.tiles-title {
+    font-size: medium;
+    font-family: "Roboto";
+    color: rgb(64, 64, 64);
+    font-weight: 500;
+}
+
+.title-seperator {
+    margin: 1% 0px;
+}
+.tile-box {
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 1fr 4fr; */
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.tile-header-container {
+    height: 20%;
+}
+
+.tiles-content-container {
+    height: 80%;
+}
+
+@media (max-width: 1400px), (max-height: 750px) {
+    .tiles-title {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 992px), (max-height: 600px) {
+    .tiles-title {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .tiles-title {
+        font-size: smaller;
+    }
+}

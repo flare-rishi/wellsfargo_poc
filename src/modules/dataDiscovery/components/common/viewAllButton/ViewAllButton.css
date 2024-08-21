@@ -1,0 +1,21 @@
+.view-button-main-div {
+  width: 68px;
+  height: 22px;
+  border-radius: 4px;
+  background: #fff5dc;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: center;
+}
+.view-all {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.72px;
+  text-align: left;
+  color: #a5790a;
+}
+.right-arrow {
+  color: #a5790a;
+}

@@ -1,0 +1,23 @@
+{
+    "columns": ["Table", "Location", "Owner", "Last Updated", "Tags", "Description"],
+    "data": [
+        {
+            "Description": "table description",
+            "Generation": 1723184327293092,
+            "Last Updated": "2024-08-09 06:18:47",
+            "Location": ["gcp"],
+            "Owner": "Sricharan",
+            "Table": "fraud_dataset1",
+            "Tags": ["Example Tag"]
+        },
+        {
+            "Description": "table description",
+            "Generation": 1723186257675822,
+            "Last Updated": "2024-08-09 06:50:57",
+            "Location": ["gcp", "gcp"],
+            "Owner": "Sricharan",
+            "Table": "fraud_dataset",
+            "Tags": ["Example Tag"]
+        }
+    ]
+}

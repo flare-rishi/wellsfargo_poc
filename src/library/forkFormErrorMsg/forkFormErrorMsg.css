@@ -1,0 +1,9 @@
+.fork-form-error-msg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 500;
+}

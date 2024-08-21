@@ -1,0 +1,36 @@
+.circle-node-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    /* height: max-content; */
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    font-family: "Roboto";
+    border-radius: 100%;
+    /* position: relative; */
+    /* overflow: hidden; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.table-version-text {
+    font-family: "Roboto";
+    font-size: 8px;
+    color: rgb(172, 170, 170);
+    width: max-content;
+}
+/* src/App.css */
+
+.custom-edge path {
+    cursor: grab;
+}
+
+.react-flow__edge {
+    cursor: grab;
+}

@@ -1,0 +1,14 @@
+const Amazon = require("./Amazon S3.png");
+const Azure = require("./Azure.png");
+const Gcp = require("./gcp.png");
+const hdfs = require("./hdfs.png");
+const prem = require("./on-premise.png");
+const DATAWAREHOUSE = require("./data-warehouse.png");
+const FOLDER = require("./folder.png");
+export const HALLOWJOB = require("./hallowJob.png");
+export const FILLEDJOB = require("./filledJob.png");
+export const HALLOWLOCKACCESS = require("./lockAccessHallow.png");
+export const FILLEDLOCKACCESS = require("./lockAccessFilled.png");
+export const VANISHINGHAND = require("./vanishingHand.gif");
+export const ERROR404 = require("./404Error.gif");
+export { DATAWAREHOUSE, FOLDER, Amazon, Azure, Gcp, hdfs, prem };

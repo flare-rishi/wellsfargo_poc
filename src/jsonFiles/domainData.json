@@ -1,0 +1,11 @@
+{
+    "columns": ["Dataset", "Location", "Contact", "Description"],
+    "data": [
+        {
+            "Contact": "sricharan",
+            "Dataset": "banking",
+            "Description": "dataset description",
+            "Location": "gcp"
+        }
+    ]
+}

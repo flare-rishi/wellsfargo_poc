@@ -1,0 +1,45 @@
+{
+    "columns": ["jobid", "job", "status", "duration", "inputs", "outputs"],
+    "data": [
+        {
+            "duration": "20 min",
+            "inputs": ["table1", "table2"],
+            "job": "job1",
+            "jobid": 2456,
+            "outputs": ["job1"],
+            "status": "success"
+        },
+        {
+            "duration": "25 min",
+            "inputs": ["job1", "table3"],
+            "job": "job2",
+            "jobid": 2434,
+            "outputs": ["job2"],
+            "status": "success"
+        },
+        {
+            "duration": "16 min",
+            "inputs": ["job2", "table4"],
+            "job": "job3",
+            "jobid": 2467,
+            "outputs": ["job3"],
+            "status": "running"
+        },
+        {
+            "duration": " -- ",
+            "inputs": ["job3", "table5"],
+            "job": "job4",
+            "jobid": 22567,
+            "outputs": ["job4"],
+            "status": "scheduled"
+        },
+        {
+            "duration": " -- ",
+            "inputs": ["job4", "table6"],
+            "job": "job5",
+            "jobid": 24324,
+            "outputs": ["job5"],
+            "status": "scheduled"
+        }
+    ]
+}

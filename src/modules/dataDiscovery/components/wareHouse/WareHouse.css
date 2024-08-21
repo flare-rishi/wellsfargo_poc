@@ -1,0 +1,47 @@
+.warehouse-main-con {
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+}
+.warehouse-detailed-card {
+  background-color: #fbfbfb;
+  width: 30%;
+  height: 193px;
+  gap: 0px;
+  border-radius: 8px;
+  background-color: #ffffff; /* Background color of the tile */
+  border-radius: 8px; /* Rounded corners for the tile */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Minimal box shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+  margin-left: 15px;
+}
+
+.warehouse-detailed-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.warehouse-card {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+}
+
+.warehouse-cards-con {
+  display: flex;
+  width: 100%;
+}
+
+.warehouse-heading {
+  margin-bottom: 20px;
+  padding-left: 24px;
+  text-transform: uppercase;
+}
+.ware-house-card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  padding: 10px 0px;
+}

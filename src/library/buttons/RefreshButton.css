@@ -1,0 +1,12 @@
+.refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.refresh-icon {
+  height: 2rem;
+  width: 1.5rem;
+  cursor: pointer;
+}

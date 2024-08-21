@@ -1,0 +1,23 @@
+.table-versioning {
+  width: 100%;
+  height: 100%;
+}
+
+react-flow__minimap .rectangular2 {
+  fill: aqua;
+}
+
+.react-flow__minimap .circular2 {
+  fill: rgb(208, 192, 247);
+}
+.react-flow__panel {
+  margin: 0px 10px;
+}
+.minimap-selected-node {
+  width: 8%;
+  height: 8%;
+}
+
+.minimap-unselected {
+  opacity: 0.3;
+}

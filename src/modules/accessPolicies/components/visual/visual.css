@@ -1,0 +1,73 @@
+.visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: margin-left 0.5s ease;
+  padding: 5px;
+  height: 100%;
+}
+.policysearchbox {
+  margin-left: 20px;
+  width: 400px;
+}
+
+.compress-react-flow-visual {
+  /* width: calc(100vw-400px); */
+  margin-left: 300px;
+}
+.visual-icon {
+  display: inline-block;
+}
+
+.visual-heading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.table-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.team-icon {
+  margin-right: 3px;
+}
+
+.policy-icon {
+  margin-right: 3px;
+}
+
+p {
+  margin-top: 4px;
+}
+
+.empty-tower {
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  padding: 300px 200px;
+}
+
+.empty-tower p {
+  text-align: center;
+}
+.newTower-button-box {
+  margin-top: 20px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.save-button {
+  color: black;
+  width: min-content !important;
+}
+
+.flow-controller-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}

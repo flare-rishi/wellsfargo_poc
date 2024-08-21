@@ -1,0 +1,141 @@
+/* Base styles */
+.row-count-container {
+  /* padding: 8% 0px; */
+  display: block;
+}
+.row-count-tile-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.current-row-count {
+  font-size: 2em; /* Use em instead of % for scalability */
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+  text-align: center;
+  display: block;
+}
+
+.vertical-line {
+  color: rgb(186, 186, 186);
+}
+
+.rows-compare-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 0.4rem; */
+}
+
+.vertical-line {
+  height: 100%;
+  width: 1px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-right: 1px solid rgb(192, 192, 192);
+}
+
+.row-compare-count {
+  font-weight: 500;
+  font-size: medium;
+  text-align: center;
+}
+
+.positive {
+  color: rgb(10, 181, 10);
+}
+
+.negative {
+  color: rgb(208, 52, 52);
+}
+
+.previous-row-container,
+.next-row-conatainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-compare-header {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  font-size: small;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px), (max-height: 750px) {
+  .current-row-count {
+    font-size: 1.6em;
+  }
+
+  .row-compare-header {
+    font-size: 0.75em;
+  }
+
+  .row-compare-count {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 992px), (max-height: 600px) {
+  .current-row-count {
+    font-size: 1em;
+  }
+
+  .row-compare-header {
+    font-size: 0.65em;
+  }
+
+  .row-compare-count {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px), (max-height: 400px) {
+  .current-row-count {
+    font-size: 0.6em;
+  }
+
+  .row-compare-count {
+    font-size: 0.6em;
+  }
+  .row-compare-header {
+    font-size: 0.6em;
+  }
+
+  .vertical-line {
+    width: 8px;
+  }
+}
+
+@media (max-width: 576px), (max-height: 200px) {
+  .current-row-count {
+    font-size: 0.5em;
+  }
+
+  .row-compare-count {
+    font-size: 0.9em;
+  }
+
+  .vertical-line {
+    width: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .current-row-count {
+    font-size: 0.3em;
+  }
+
+  .row-compare-count {
+    font-size: 0.8em;
+  }
+
+  .vertical-line {
+    width: 4px;
+  }
+}

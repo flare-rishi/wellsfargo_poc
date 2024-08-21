@@ -1,0 +1,356 @@
+.node-outer {
+  padding: 5px;
+  min-height: 40px;
+  /* width: 150px; */
+  min-width: 100px;
+  width: 180px;
+  max-height: 60px;
+  margin: 7px;
+  background-color: white;
+  border: 1px solid #cbd5e0;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.tower-indication {
+  display: flex;
+  gap: 2px;
+  fill: grey;
+  object-position: left bottom;
+}
+
+.inter-box {
+  display: flex;
+}
+.inter {
+  max-width: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.disable {
+  color: lightgrey !important;
+  background-color: rgb(255, 255, 255) !important;
+  cursor: not-allowed;
+}
+.node-outer:hover {
+  transform: scale(1.05);
+}
+
+.node-main {
+  flex: 0.8;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.highlight-different {
+  border: 1px solid rgb(141, 87, 37, 0.678);
+  font-weight: 600;
+  color: rgba(141, 87, 37, 0.678);
+}
+
+.highlight {
+  border: 1px solid rgb(231, 112, 0);
+  font-weight: 600;
+  color: rgb(231, 112, 0);
+}
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #cbd5e0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 2px;
+  z-index: 1;
+  bottom: 50%;
+  left: 120%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:hover .tooltip-text :hover {
+  transform: scale(1.05);
+}
+.tooltip .tooltip-text-left {
+  visibility: hidden;
+  width: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 2px;
+  z-index: 1;
+  bottom: 50%;
+  border: 1px solid #cbd5e0;
+
+  right: 120%;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.tooltip:hover .tooltip-text-left {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:hover .tooltip-text-left :hover {
+  transform: scale(1.05);
+}
+
+.three-dots {
+  visibility: hidden;
+  position: absolute;
+  width: 20px; /* Set width and height to be the same value */
+  height: 20px;
+  right: 5px;
+  border-radius: 50% !important;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three-dots:hover {
+  background-color: antiquewhite;
+}
+
+.node-outer:hover .three-dots {
+  visibility: visible;
+}
+
+.modal {
+  /* visibility: visible; */
+  position: absolute;
+  top: 0%;
+  /* left: 110%; */
+  background-color: transparent;
+  transition: all 3s ease;
+  opacity: 0;
+  padding: 5px;
+  z-index: 150;
+  width: auto;
+  display: flex;
+  opacity: 0;
+  gap: 10px;
+  /* transform: translateX(10%); */
+  animation: slideFromTopModal 0.5s ease forwards, fadeIn 0.5s ease forwards;
+}
+
+@keyframes slideFromTopModal {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal.hidden {
+  top: 0%;
+  opacity: 1;
+  animation: slideToTop 0.5s ease forwards, fadeOut 0.5s ease forwards;
+}
+
+@keyframes slideToTop {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.scaling-div {
+  /* animation: scaleAnimation 0.5s ease-in-out; */
+}
+
+.transparent {
+  /* transition: opacity 1s; */
+  opacity: 0.3;
+}
+
+.transition-div {
+  transition: opacity 0.9s;
+}
+.highlight {
+  /* background-color: aqua; */
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+}
+
+.show-searched {
+  border: 1px solid rgb(21, 216, 89) !important;
+}
+
+.inner-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 7.5px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+
+.inner-div:hover {
+  background-color: rgb(245, 245, 245);
+}
+.inner-div-icons {
+  height: 20px;
+  width: 20px;
+}
+
+.node-outer-active {
+  border: 2px solid black;
+}
+
+.node-content {
+  margin: 2px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.node-info {
+  height: auto;
+  width: 180px;
+  top: 10%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1500;
+  opacity: 0;
+  background-color: white;
+  transition: top 0.8s ease, opacity 0.8s ease;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1);
+  padding: 5%;
+}
+
+.tooltip:hover .node-info {
+  visibility: visible;
+  top: 120%;
+  opacity: 1;
+}
+
+.node-info p {
+  font-size: small;
+  font-weight: 400;
+}
+.info-toast {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.edited-node {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  height: 12px;
+  color: rgba(236, 0, 0, 0.712);
+}
+
+.rows {
+  height: 5px;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  z-index: 1500;
+  gap: 3px;
+  left: 5px;
+  /* border: 1px; */
+}
+
+.row {
+  background-color: #f7e4d6;
+  border: 5px;
+  border-color: black;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  font-size: 9px;
+  color: rgb(236, 128, 56);
+  font-weight: 700;
+}
+.stack {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 5px;
+}
+.top-right {
+  left: 90%;
+  bottom: 90%;
+}
+
+.highlight-split-view-selected {
+}

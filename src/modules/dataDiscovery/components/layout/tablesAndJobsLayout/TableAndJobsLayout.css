@@ -1,0 +1,55 @@
+.table-level-main-div {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.table-level-top-div {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* margin-bottom: 1rem; */
+}
+.table-level-top-left-div {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+}
+.table-level-top-right-div {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.table-level-bottom-div {
+    width: 100%;
+    height: 42%;
+}
+
+.table-top-left-first-div {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 0.5rem;
+    /* background-color: var(--background-white);
+  border-radius: var(--border-radius-rem); */
+    padding: 0px;
+    position: relative;
+}
+
+.table-top-left-second-div {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fork-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}

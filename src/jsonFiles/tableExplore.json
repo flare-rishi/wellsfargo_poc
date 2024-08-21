@@ -1,0 +1,29 @@
+{
+    "column_names": ["name", "account", "state", "amount"],
+    "data": [
+        {
+            "account": "1645",
+            "amount": "40.5",
+            "name": "Lamar Jackson",
+            "state": "Nevada"
+        },
+        {
+            "account": "1585",
+            "amount": "50.81",
+            "name": "Irene Reed",
+            "state": "Nevada"
+        },
+        {
+            "account": "1070",
+            "amount": "40.91",
+            "name": "Ezekiel Trujillo",
+            "state": "Nevada"
+        },
+        {
+            "account": "1201",
+            "amount": "4.37",
+            "name": "Aaron Hardin",
+            "state": "Nevada"
+        }
+    ]
+}

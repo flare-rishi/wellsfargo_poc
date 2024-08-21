@@ -1,0 +1,28 @@
+.rectangle {
+  min-width: 10px;
+  /* height: 20px; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: fit-content;
+  padding: 5px;
+  gap: 2px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: rgb(251, 251, 251);
+}
+
+.branch-name {
+  color: rgb(32, 31, 31);
+  font-family: "Roboto";
+  font-size: 7px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+}
+
+.rectangle:hover {
+  opacity: 1;
+  background-color: rgb(232, 232, 232) !important;
+}

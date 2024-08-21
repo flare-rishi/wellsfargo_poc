@@ -1,0 +1,19 @@
+{
+    "warehouse": [
+        {
+            "domainName": "Finance"
+        },
+        {
+            "domainName": "Hr-data"
+        },
+        {
+            "domainName": "sales"
+        },
+        {
+            "domainName": "Sales"
+        },
+        {
+            "domainName": "banking"
+        }
+    ]
+}

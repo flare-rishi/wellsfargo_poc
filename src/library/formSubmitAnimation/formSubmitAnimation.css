@@ -1,0 +1,45 @@
+.loading-main-form {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-svg-form .outer-circle {
+    fill: none;
+    transform-origin: 50% 50%;
+    stroke: var(--dataflare-theme-color);
+    stroke-width: 4;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite, rotate4 2s linear infinite;
+}
+
+.loading-svg-form .inner-circle {
+    fill: rgb(191, 191, 191);
+    stroke: none;
+}
+
+@keyframes rotate4 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash4 {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 200;
+        stroke-dashoffset: -35px;
+    }
+
+    100% {
+        stroke-dashoffset: -125px;
+    }
+}

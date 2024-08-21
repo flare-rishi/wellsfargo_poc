@@ -1,0 +1,94 @@
+{
+    "acls": {
+        "abc": {
+            "admin": {},
+            "analyst-1": {
+                "filter": "fraud_dataset.amount > 1000"
+            },
+            "analyst-1-masked": {
+                "masks": {
+                    "nameOrig": "hash64 <if> fraud_dataset.amount > 200000"
+                },
+                "member_of": ["analyst-1"]
+            }
+        },
+        "towers": {
+            "abc": 1
+        }
+    },
+    "removed_columns": ["amount", "nameOrig"],
+    "schema": {
+        "columns": ["Column", "Type", "Pii", "Visibility"],
+        "data": [
+            {
+                "Column": "step",
+                "Pii": false,
+                "Type": "int64",
+                "Visibility": true
+            },
+            {
+                "Column": "type",
+                "Pii": false,
+                "Type": "string",
+                "Visibility": true
+            },
+            {
+                "Column": "amount",
+                "Pii": false,
+                "Type": "double",
+                "Visibility": true
+            },
+            {
+                "Column": "nameOrig",
+                "Pii": false,
+                "Type": "string",
+                "Visibility": true
+            },
+            {
+                "Column": "oldbalanceOrg",
+                "Pii": false,
+                "Type": "double",
+                "Visibility": true
+            },
+            {
+                "Column": "newbalanceOrig",
+                "Pii": false,
+                "Type": "double",
+                "Visibility": true
+            },
+            {
+                "Column": "nameDest",
+                "Pii": false,
+                "Type": "string",
+                "Visibility": true
+            },
+            {
+                "Column": "oldbalanceDest",
+                "Pii": false,
+                "Type": "double",
+                "Visibility": true
+            },
+            {
+                "Column": "newbalanceDest",
+                "Pii": false,
+                "Type": "double",
+                "Visibility": true
+            },
+            {
+                "Column": "isFraud",
+                "Pii": false,
+                "Type": "int64",
+                "Visibility": true
+            },
+            {
+                "Column": "isFlaggedFraud",
+                "Pii": false,
+                "Type": "int64",
+                "Visibility": true
+            }
+        ],
+        "groups": ["abc:admin", "abc:analyst-1", "abc:analyst-1-masked"],
+        "selected_group": "abc:admin"
+    },
+    "status": "Invalid"
+}

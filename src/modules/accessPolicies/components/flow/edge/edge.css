@@ -1,0 +1,32 @@
+.transparentEdge {
+  opacity: 0.3;
+  stroke-width: 1.5 !important;
+}
+.transition-edge {
+  transition: all 0.9s;
+  stroke-dasharray: 0, 0;
+}
+
+.highlightEdge {
+  opacity: 1;
+  stroke-width: 3 !important;
+  stroke: rgb(83, 78, 78) !important;
+}
+.normalEdge {
+  stroke: rgb(133 133 133);
+  stroke-width: 0.7 !important;
+}
+
+@keyframes march {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 100%;
+  }
+}
+
+.animated-edge {
+  stroke-dasharray: 12, 5; /* This creates the "dotted line" effect */
+  animation: march 50s linear infinite; /* Adjust timing as needed */
+}

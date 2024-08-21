@@ -1,0 +1,20 @@
+.bread-crumb {
+    margin: 0px 20px 20px 0px;
+}
+
+.bread-crumb-main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.user-group-input {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.flex-middle {
+    margin-bottom: 1rem;
+}

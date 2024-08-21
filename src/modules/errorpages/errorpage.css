@@ -1,0 +1,149 @@
+.error-container {
+    position: absolute;
+    z-index: 200;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.618);
+    opacity: 0;
+    animation: fadeInBackground 1s ease-out forwards;
+}
+
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.error-box {
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    animation: fadeInCenter 1s ease-out;
+    padding: 20px;
+}
+
+@keyframes fadeInCenter {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.error-msg-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-msg-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.error-msg {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: rgb(59, 59, 59);
+    margin-left: 0.5rem;
+}
+
+.error-icon {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: rgb(59, 59, 59);
+}
+
+@keyframes slideInFromCenter {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.error-link {
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.error-link > a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.error-image {
+    height: 100%;
+}
+
+.error-image img {
+    height: inherit;
+}
+
+@media (max-width: 1024px) {
+    .error-box {
+        width: 80%;
+    }
+    .error-msg {
+        font-size: 2.5rem;
+    }
+    .error-icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .error-box {
+        flex-direction: column;
+        width: 90%;
+    }
+    .error-msg {
+        font-size: 2rem;
+    }
+    .error-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-box {
+        width: 100%;
+        padding: 10px;
+    }
+    .error-msg {
+        font-size: 1.5rem;
+    }
+    .error-icon {
+        font-size: 1.5rem;
+    }
+    .error-link {
+        flex-direction: column;
+    }
+    .error-link > a {
+        margin-top: 10px;
+    }
+}

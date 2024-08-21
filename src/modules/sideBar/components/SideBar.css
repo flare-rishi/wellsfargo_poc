@@ -1,0 +1,74 @@
+.sideBar-main {
+  width: 5%;
+  height: 100vh;
+  border-right: 2px solid #e4e4e4;
+  padding-top: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.sideBar-main svg {
+  height: 35px;
+  width: 35px;
+  /* cursor: pointer; */
+}
+
+.logo-sidebar {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.dataFlare-logo {
+  width: 44px;
+  height: 44px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.routes-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 71px;
+  /* color: #dd1e25; */
+  color: #1f1f1f;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.route-link-active {
+  /* background-color: #d3e3fd; */
+  background-color: var(--background-tab);
+}
+
+.routes-link p {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 11.72px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.logo-route {
+  color: #1f1f1f;
+  /* color: #dd1e25; */
+  margin-top: 10px;
+}
+
+.route-icon {
+  width: 14px;
+  height: 14px;
+}

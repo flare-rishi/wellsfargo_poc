@@ -1,0 +1,87 @@
+/* svg path {
+  transition: all 1.3s;
+}
+
+svg {
+  transition: all 1s;
+} */
+.line {
+    background-color: rgba(151, 150, 150, 0.808);
+    width: 100%;
+    height: 1px;
+}
+a {
+    text-decoration: none;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+* {
+    font-family: var(--default-font);
+}
+
+.react-flow__attribution {
+    visibility: hidden;
+}
+
+.btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Webkit Scrollbar Styles */
+/* Webkit Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px; /* Slimmer scrollbar width */
+    height: 10px; /* Slimmer scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+    background: grey; /* No background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #989898; /* Light gray color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* No border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5f5f5f; /* Darker gray on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: gold; /* Gold color when active */
+}
+
+/* Firefox Scrollbar Styles */
+body {
+    scrollbar-color: #9d9d9d transparent; /* Thumb and track colors for Firefox */
+}
+
+body::-webkit-scrollbar {
+    width: 10px; /* Slimmer scrollbar width */
+    height: 10px; /* Slimmer scrollbar height */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #949494; /* Light gray color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* No border */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #868686; /* Darker gray on hover */
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: gold; /* Gold color when active */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(251, 251, 251) !important; /* No background for the scrollbar track */
+}

@@ -1,0 +1,23 @@
+.tabs-main {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  height: auto;
+  margin: 5px 0px;
+}
+
+.tab-div {
+  display: flex;
+  width: max-content;
+  gap: 5px;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-rem);
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.layout-tab-active {
+  /* color: var(--color-red); */
+  background-color: var(--background-tab);
+  transition: color 0.3s ease;
+}

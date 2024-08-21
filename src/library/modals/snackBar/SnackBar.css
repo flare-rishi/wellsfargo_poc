@@ -1,0 +1,17 @@
+.snack-bar-div {
+  width: max-content;
+  height: auto;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: var(--background-tab);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2rem;
+}
+
+.warning-icon {
+  color: orange;
+}

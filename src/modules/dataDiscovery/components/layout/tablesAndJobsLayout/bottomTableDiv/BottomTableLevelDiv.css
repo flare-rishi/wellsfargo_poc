@@ -1,0 +1,22 @@
+.bottom-table-div {
+    width: 100%;
+    height: 100%;
+    /* padding: 15px; */
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-table-heading {
+    width: 100%;
+    height: 25%;
+}
+.bottom-table-tabs-div {
+    width: 100%;
+    height: 10%;
+}
+
+.bottom-table-content-div {
+    width: 100%;
+    height: 85%;
+    /* overflow-y: hidden; */
+}

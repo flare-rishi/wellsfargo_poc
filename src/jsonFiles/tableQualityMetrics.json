@@ -1,0 +1,32 @@
+[
+    {
+        "diff": "-1.2",
+        "title": "Accuracy",
+        "values": [70, 88.8, 77, 97, 55, 68]
+    },
+    {
+        "diff": "-10",
+        "title": "Complete",
+        "values": [77, 12, 34, 56, 78, 89, 36, 54]
+    },
+    {
+        "diff": "+18.4",
+        "title": "Consistency",
+        "values": [100, 100]
+    },
+    {
+        "diff": "+10",
+        "title": "Duplication",
+        "values": [99.99]
+    },
+    {
+        "diff": "+18.4",
+        "title": "Uniqueness",
+        "values": [100, 100]
+    },
+    {
+        "diff": "+10",
+        "title": "Lineage",
+        "values": [99.99]
+    }
+]

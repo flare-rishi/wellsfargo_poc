@@ -1,0 +1,49 @@
+{
+    "forks": {
+        "1723186257675822": ["fork1", "fork2", "fork3"]
+    },
+    "versions": [
+        {
+            "Generation": "1723184837950338",
+            "Metageneration": 1,
+            "Size": 4998086,
+            "Updated": "2024-08-09 06:27:17"
+        },
+        {
+            "Generation": "1723185096109508",
+            "Metageneration": 1,
+            "Size": 9536978,
+            "Updated": "2024-08-09 06:31:36"
+        },
+        {
+            "Generation": "1723185156018424",
+            "Metageneration": 1,
+            "Size": 4998086,
+            "Updated": "2024-08-09 06:32:36"
+        },
+        {
+            "Generation": "1723185165926069",
+            "Metageneration": 1,
+            "Size": 5590993,
+            "Updated": "2024-08-09 06:32:45"
+        },
+        {
+            "Generation": "1723185734455221",
+            "Metageneration": 1,
+            "Size": 5908627,
+            "Updated": "2024-08-09 06:42:14"
+        },
+        {
+            "Generation": "1723186012825236",
+            "Metageneration": 1,
+            "Size": 5801933,
+            "Updated": "2024-08-09 06:46:52"
+        },
+        {
+            "Generation": "1723186257675822",
+            "Metageneration": 1,
+            "Size": 6085601,
+            "Updated": "2024-08-09 06:50:57"
+        }
+    ]
+}

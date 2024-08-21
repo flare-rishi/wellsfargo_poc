@@ -1,0 +1,39 @@
+.visual-box {
+  background-color: #edf2f7;
+  width: 100%;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.custom-refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 30px;
+  background-color: #ffffff; /* Similar to default background */
+  border: none;
+  border-bottom: 0.3px solid rgb(243, 243, 243);
+  cursor: pointer;
+  position: absolute;
+  bottom: 28px;
+}
+
+.custom-refresh-button:hover {
+  background-color: #f0f0f0; /* Subtle hover effect */
+}
+
+.custom-refresh-button svg {
+  width: 30px;
+  height: 18px;
+  fill: #000000; /* Similar to default icon color */
+}
+
+.searchTeamPolicy {
+  width: 200px;
+  position: absolute;
+  top: 210px;
+  z-index: 100;
+  background-color: white;
+  right: 15px;
+}

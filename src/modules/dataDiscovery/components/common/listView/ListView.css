@@ -1,0 +1,203 @@
+.table-container {
+    position: relative;
+    overflow-x: auto;
+    font-family: var(--default-font);
+    border-radius: 50px;
+    height: 100%; /* Ensure container takes full height */
+}
+
+table {
+    height: 100%;
+}
+
+.list-view {
+    width: 100%;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #6b7280;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure fixed table layout for consistent column widths */
+}
+
+.list-view thead {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    background-color: var(--background-body);
+    color: #374151;
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Fix the layout for the header */
+}
+
+.list-view th,
+.list-view td {
+    font-family: var(--default-font);
+
+    padding: 0.75rem 1.5rem;
+}
+
+.table-head > tr > th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+.table-head > tr > th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+.table-body {
+    font-family: var(--default-font);
+
+    display: block; /* Make tbody a block to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100%; /*Adjust height to account for thead height */
+    padding-bottom: 3rem;
+}
+
+.list-view tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.list-view th {
+    font-weight: 600;
+}
+
+.list-view td {
+    font-weight: 400;
+    display: table-cell;
+}
+
+.list-view tbody tr td:first-child {
+    font-weight: 500;
+    color: #111827;
+}
+
+.table-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensure rows take full width */
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+
+@media (prefers-color-scheme: dark) {
+    .table-container {
+        background-color: #1f2937;
+    }
+    .list-view {
+        color: #9ca3af;
+    }
+    .list-view thead {
+        background-color: #374151;
+        color: #d1d5db;
+    }
+
+    .list-view tbody tr:hover {
+        background-color: #4b5563;
+    }
+    .list-view tbody tr td:first-child {
+        color: #f9fafb;
+    }
+}
+
+.Location {
+    width: 8%;
+}
+
+.Dataset {
+    width: 10%;
+}
+
+.Contact {
+    width: 10%;
+}
+
+.Job {
+    width: 30%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Table {
+    width: 10%;
+}
+
+.Last {
+    width: 10%;
+}
+
+.Owner {
+    width: 10%;
+}
+
+.Description {
+    width: 40%;
+    min-width: 550px;
+}
+
+.Tags {
+    width: 15%;
+}
+
+.Status {
+    width: 20%;
+}
+
+.Name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Pii {
+    width: 20%;
+}
+
+.Column {
+    width: 32%;
+}
+.Task {
+    width: 25%;
+}
+.Visibility {
+    width: 23%;
+}
+tbody .Name,
+tbody .Job {
+    text-decoration: underline;
+}
+
+.query {
+    width: 40%;
+}
+
+@media (min-width: 1200px) {
+    .tbody tr {
+        font-size: 10px;
+    }
+    .thead tr {
+        font-size: 10px;
+    }
+    .no-border-spacing td {
+        font-size: 10px;
+    }
+    .no-border-spacing th {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .tbody tr {
+        font-size: 12px;
+    }
+    .thead tr {
+        font-size: 12px;
+    }
+    .no-border-spacing td {
+        font-size: 10px;
+    }
+    .no-border-spacing th {
+        font-size: 14px;
+    }
+}
+
+.schema-table table {
+    border-spacing: 15px;
+}

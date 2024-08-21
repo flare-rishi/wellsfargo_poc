@@ -1,0 +1,17 @@
+{
+    "columns": ["column-name", "query", "previous_sample", "adjusted_sample"],
+    "data": [
+        {
+            "adjusted_sample": "NY",
+            "column-name": "warehourse_location",
+            "previous_sample": "New York, NY",
+            "query": "UPDATE Inventory_Levels \nSET warehouse_location = 'NY' \nWHERE warehouse_location = 'New York, NY'; \n"
+        },
+        {
+            "adjusted_sample": "5001",
+            "column-name": "supplier_id",
+            "previous_sample": "3001",
+            "query": "UPDATE Inventory_Levels\nSET supplier_id = supplier_id + 2000;"
+        }
+    ]
+}

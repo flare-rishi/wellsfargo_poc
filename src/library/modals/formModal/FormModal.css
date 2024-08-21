@@ -1,0 +1,135 @@
+.form-modal-main-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.new-fork-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(64, 64, 64);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: medium;
+}
+
+.font-color {
+    color: rgb(64, 64, 64);
+}
+
+.include-exclude {
+    margin-top: 10px;
+}
+
+.view-form-section {
+    margin-top: 20px;
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.view-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: -1px;
+    background: #ffffff; /* Background color for sticky header */
+    z-index: 20; /* Ensure it's above other content */
+    border-bottom: 1px solid #ddd;
+}
+
+.view-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+}
+
+.new-fork-remove-icon-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.view-form-fields {
+    display: flex;
+    gap: 16px;
+}
+
+.view-form-path {
+    margin-top: 16px;
+}
+
+.include-exclude-tiles {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    transition: all 0.3s ease-in-out;
+}
+
+.path-box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: all 0.3s ease-in-out;
+}
+
+.include-exclude-box {
+    width: 65%;
+}
+
+.include-exclude-tiles .MuiRadioGroup-root {
+    display: flex;
+    justify-content: space-between;
+}
+
+.include-exclude-tiles .MuiFormControlLabel-root {
+    margin: 0;
+}
+
+.include-exclude-tiles .MuiAutocomplete-root {
+    margin-top: 8px;
+}
+
+.new-fork-button-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newfork-form-component-box {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    transition: all 0.3s ease-in-out;
+}
+
+.view-form-add-button {
+    display: flex;
+    justify-content: center;
+}
+
+.new-fork-left-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-fork-form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}

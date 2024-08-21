@@ -1,0 +1,9 @@
+
+#Frontend
+	1. cd Frontend
+	2. npm install
+	3. npm audit fix --force (if "react-scripts" version != 5.0.1 or if its 3.0.1 then rerun the command)
+	4. npm start (this starts the frontend)
+	
+
+

@@ -1,0 +1,7 @@
+.layout-data-discovery {
+    height: 100%;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 5% 95%;
+    /* background-color: var(--background-body); */
+}

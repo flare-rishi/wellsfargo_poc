@@ -1,0 +1,28 @@
+/* PiiIndicator.css */
+.pii-indicator {
+    display: inline-block;
+    cursor: default;
+    font-size: 1.5em;
+    color: gray !important; /* Lighter color for both true and false states */
+}
+
+.pii-indicator.true {
+    color: gray !important; /* Grey color for true state */
+}
+
+.pii-indicator.false {
+    color: gray !important; /* Grey color for false state */
+}
+
+/* Ensure no pointer change on hover */
+.pii-indicator:hover {
+    cursor: default;
+}
+
+.false-icon {
+    font-size: 20px;
+}
+
+.true-icon {
+    font-size: 20px;
+}

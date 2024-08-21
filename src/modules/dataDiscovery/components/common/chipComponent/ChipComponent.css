@@ -1,0 +1,22 @@
+.images {
+  justify-content: center;
+  width: 30px;
+  box-sizing: border-box;
+  height: 28px;
+  border: 1px solid rgb(218, 216, 216);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.data-discovery-chip-stack {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
